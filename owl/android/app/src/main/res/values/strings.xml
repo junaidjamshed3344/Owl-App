@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OWL</string>
+    <string name="facebook_app_id">280699296926568</string>
+    <string name="fb_login_protocol_scheme">fb280699296926568</string>
+    <string name="activity_sample_device_admin">OWL</string>
+    <string name="sample_device_admin">OWL</string>
+    <string name="sample_device_admin_description">This permission will not allow you to uninstall OWL app. If you still want to uninstall OWL app, you can disable this setting.</string>
+</resources>

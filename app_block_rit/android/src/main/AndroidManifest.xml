@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.app_block_rit">
+
+    <uses-permission android:name="android.provider.Settings.ACTION_USAGE_ACCESS_SETTINGS " />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application>
+        <service
+            android:name=".AppService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
+            android:name=".RewardService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".BlockMsg"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.AppCompat.Translucent"
+            android:excludeFromRecents="true"
+            />
+<!--        android:theme="@style/Theme.AppCompat.Translucent"-->
+        <service
+            android:name=".BlockService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
